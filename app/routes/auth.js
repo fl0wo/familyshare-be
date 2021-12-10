@@ -37,7 +37,7 @@ router.post('/register', trimRequest.all, validateRegister, register)
 /*
  * Verify route
  */
-router.post('/verify', trimRequest.all, validateVerify, verify)
+router.get('/verify/:emailId', trimRequest.all, validateVerify, verify)
 
 /*
  * Forgot password route

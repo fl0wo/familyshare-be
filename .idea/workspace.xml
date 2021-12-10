@@ -16,12 +16,26 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth/validators/validateVerify.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth/validators/validateVerify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth/verify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware/emailer/prepareToSendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/emailer/prepareToSendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware/emailer/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/emailer/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639090878956</updated>
-      <workItem from="1639090880029" duration="5680000" />
+      <workItem from="1639090880029" duration="6181000" />
+      <workItem from="1639146873446" duration="5504000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -67,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639095579673</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ING-002: First todo">
+      <created>1639096902398</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639096902398</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,10 +105,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ING-001: First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="ING-001: First commit" />
+    <MESSAGE value="ING-002: First todo" />
+    <MESSAGE value="Fixed sendMail added usr &amp; pwd (will be secrets)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed sendMail added usr &amp; pwd (will be secrets)." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -109,17 +134,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639095606836">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639097098334">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639095606836" />
-    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639093782894">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639097098334" />
+    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639156432619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639093782894" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639091120199">
+    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639156432619" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639153819289">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639091120199" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639153819289" />
   </component>
 </project>

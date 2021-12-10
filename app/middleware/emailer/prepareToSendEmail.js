@@ -1,4 +1,4 @@
-const { sendEmail } = require('./sendEmail')
+const { sendEmailVerification } = require('./sendEmail')
 
 /**
  * Prepares to send email
@@ -6,7 +6,7 @@ const { sendEmail } = require('./sendEmail')
  * @param {string} subject - subject
  * @param {string} htmlMessage - html message
  */
-const prepareToSendEmail = (user = {}, subject = '', htmlMessage = '') => {
+const prepareToSendEmail = (user={}, subject = '', htmlMessage = '') => {
   user = {
     name: user.name,
     email: user.email,
@@ -17,8 +17,8 @@ const prepareToSendEmail = (user = {}, subject = '', htmlMessage = '') => {
     subject,
     htmlMessage
   }
-  if (process.env.NODE_ENV === 'production') {
-    sendEmail(data, (messageSent) =>
+  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'development') {
+    sendEmailVerification(data, (messageSent) =>
       messageSent
         ? console.log(`Email SENT to: ${user.email}`)
         : console.log(`Email FAILED to: ${user.email}`)

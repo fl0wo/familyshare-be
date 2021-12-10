@@ -10,8 +10,9 @@ const { handleError } = require('../../middleware/utils')
  */
 const verify = async (req, res) => {
   try {
+    let id = req.params.emailId;
     req = matchedData(req)
-    const user = await verificationExists(req.id)
+    const user = await verificationExists(id)
     res.status(200).json(await verifyUser(user))
   } catch (error) {
     handleError(res, error)

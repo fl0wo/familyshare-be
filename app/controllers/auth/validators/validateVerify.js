@@ -5,7 +5,7 @@ const { check } = require('express-validator')
  * Validates verify request
  */
 const validateVerify = [
-  check('id')
+  check('emailId')
     .exists()
     .withMessage('MISSING')
     .not()

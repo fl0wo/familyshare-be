@@ -6,16 +6,17 @@ const mg = require('nodemailer-mailgun-transport')
  * @param {Object} data - data
  * @param {boolean} callback - callback
  */
-const sendEmail = async (data = {}, callback) => {
-  const auth = {
+const sendEmailVerification = async (data = {}, callback) => {
+  var nodemailer = require('nodemailer');
+  var transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, // use SSL
     auth: {
-      // eslint-disable-next-line camelcase
-      api_key: process.env.EMAIL_SMTP_API_MAILGUN,
-      domain: process.env.EMAIL_SMTP_DOMAIN_MAILGUN
+      user: process.env.EMAIL_FROM_ADDRESS,
+      pass: process.env.EMAIL_PWD
     }
-    // host: 'api.eu.mailgun.net' // THIS IS NEEDED WHEN USING EUROPEAN SERVERS
-  }
-  const transporter = nodemailer.createTransport(mg(auth))
+  });
   const mailOptions = {
     from: `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM_ADDRESS}>`,
     to: `${data.user.name} <${data.user.email}>`,
@@ -30,4 +31,4 @@ const sendEmail = async (data = {}, callback) => {
   })
 }
 
-module.exports = { sendEmail }
+module.exports = { sendEmailVerification }

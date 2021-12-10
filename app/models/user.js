@@ -29,6 +29,10 @@ const UserSchema = new mongoose.Schema(
       enum: ['user', 'admin'],
       default: 'user'
     },
+    childrens: [{
+      id : String,
+      name : String
+    }],
     verification: {
       type: String
     },

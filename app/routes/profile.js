@@ -12,7 +12,8 @@ const { roleAuthorization } = require('../controllers/auth')
 const {
   getProfile,
   updateProfile,
-  changePassword
+  changePassword,
+  addChildren
 } = require('../controllers/profile')
 
 const {
@@ -57,6 +58,17 @@ router.post(
   trimRequest.all,
   validateChangePassword,
   changePassword
+)
+
+/*
+ * Add children
+ */
+router.post(
+  '/kid/add',
+  requireAuth,
+  roleAuthorization(['user', 'admin']),
+  trimRequest.all,
+  addChildren
 )
 
 module.exports = router

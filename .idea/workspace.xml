@@ -25,22 +25,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/profile/addChildren.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/auth/validators/validateVerify.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth/validators/validateVerify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/auth/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth/verify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/middleware/emailer/prepareToSendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/emailer/prepareToSendEmail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/middleware/emailer/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/emailer/sendEmail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639090878956</updated>
       <workItem from="1639090880029" duration="6181000" />
-      <workItem from="1639146873446" duration="5504000" />
+      <workItem from="1639146873446" duration="7670000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -89,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639096902398</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed sendMail added usr &amp; pwd (will be secrets).">
+      <created>1639156506361</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639156506361</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,14 +144,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639097098334">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639156511142">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639097098334" />
-    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639156432619">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639156511142" />
+    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639158666076">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639156432619" />
+    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639158666076" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639153819289">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

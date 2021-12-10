@@ -2,7 +2,7 @@
 
 process.env.NODE_ENV = 'test'
 
-const City = require('../app/models/city')
+const City = require('../app/models/position')
 const faker = require('faker')
 const chai = require('chai')
 const chaiHttp = require('chai-http')

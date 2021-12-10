@@ -1,4 +1,4 @@
-const City = require('../../models/city')
+const City = require('../../models/position')
 const { updateItem } = require('../../middleware/db')
 const { isIDGood, handleError } = require('../../middleware/utils')
 const { matchedData } = require('express-validator')
@@ -9,7 +9,7 @@ const { cityExistsExcludingItself } = require('./helpers')
  * @param {Object} req - request object
  * @param {Object} res - response object
  */
-const updateCity = async (req, res) => {
+const updatePosition = async (req, res) => {
   try {
     req = matchedData(req)
     const id = await isIDGood(req.id)
@@ -22,4 +22,4 @@ const updateCity = async (req, res) => {
   }
 }
 
-module.exports = { updateCity }
+module.exports = { updatePosition: updatePosition }

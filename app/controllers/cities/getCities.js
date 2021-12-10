@@ -1,4 +1,4 @@
-const City = require('../../models/city')
+const City = require('../../models/position')
 const { checkQueryString, getItems } = require('../../middleware/db')
 const { handleError } = require('../../middleware/utils')
 

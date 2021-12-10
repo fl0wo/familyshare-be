@@ -1,4 +1,4 @@
-const City = require('../../models/city')
+const City = require('../../models/position')
 const { matchedData } = require('express-validator')
 const { isIDGood, handleError } = require('../../middleware/utils')
 const { deleteItem } = require('../../middleware/db')

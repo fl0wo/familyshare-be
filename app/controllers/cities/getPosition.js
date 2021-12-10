@@ -1,5 +1,5 @@
 const { matchedData } = require('express-validator')
-const City = require('../../models/city')
+const City = require('../../models/position')
 const { getItem } = require('../../middleware/db')
 const { isIDGood, handleError } = require('../../middleware/utils')
 
@@ -8,7 +8,7 @@ const { isIDGood, handleError } = require('../../middleware/utils')
  * @param {Object} req - request object
  * @param {Object} res - response object
  */
-const getCity = async (req, res) => {
+const getPosition = async (req, res) => {
   try {
     req = matchedData(req)
     const id = await isIDGood(req.id)
@@ -18,4 +18,4 @@ const getCity = async (req, res) => {
   }
 }
 
-module.exports = { getCity }
+module.exports = { getPosition: getPosition }

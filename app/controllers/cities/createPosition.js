@@ -1,4 +1,4 @@
-const City = require('../../models/city')
+const City = require('../../models/position')
 const { createItem } = require('../../middleware/db')
 const { handleError } = require('../../middleware/utils')
 const { matchedData } = require('express-validator')
@@ -9,7 +9,7 @@ const { cityExists } = require('./helpers')
  * @param {Object} req - request object
  * @param {Object} res - response object
  */
-const createCity = async (req, res) => {
+const createPosition = async (req, res) => {
   try {
     req = matchedData(req)
     const doesCityExists = await cityExists(req.name)
@@ -21,4 +21,4 @@ const createCity = async (req, res) => {
   }
 }
 
-module.exports = { createCity }
+module.exports = { createPosition: createPosition }

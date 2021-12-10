@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +58,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639090878956</updated>
-      <workItem from="1639090880029" duration="4566000" />
+      <workItem from="1639090880029" duration="5680000" />
     </task>
+    <task id="LOCAL-00001" summary="ING-001: First commit">
+      <created>1639095579673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639095579673</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +83,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ING-001: First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ING-001: First commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -97,6 +109,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639095606836">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639095606836" />
     <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639093782894">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

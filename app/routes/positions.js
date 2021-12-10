@@ -15,16 +15,12 @@ const {
   updatePosition
 } = require('../controllers/cities')
 
-const {
-  validateCreateCity
-} = require('../controllers/cities/validators')
-
 // router.get('/all', getAllCities)
 
 router.get(
   '/',
   requireAuth,
-  roleAuthorization(['user','admin']),
+  roleAuthorization(['user']),
   trimRequest.all,
   getPosition
 )

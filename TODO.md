@@ -20,8 +20,14 @@ genitore = user
     - Posizione(_id,obj_id,positions:[coords,timestamp]);
     - /{kid_id}/imhere/ body:coords -> UpdateIntoPosizione noAth/but locally stored id
     - /{par_id}/imhere/ body:coords -> UpdateIntoPosizione Ath
-    - /{kid_id}/where ? -> coords Auth parent & ur the parent
+    - /{kid_id}/where ? -> coords Auth parent
     - /nearme/1000 ? -> List<coords> Genitori around me
+
+3) Quando bambino sparisce (chiude app/ non si ha + notizie di lui da 1 ora)
+    Trigger svuota posizioni di quel bambino
+    Trigger elimina bambino dalla lista di figli dei suoi genitori
+
+4) Check that u dont already have a kid registred with that 'who' id b4 reg again by mistake
 
 3) User::events ->
 [{kids:[string],start:Date,duration:duration,title,description,place:Coords}]

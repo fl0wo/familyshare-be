@@ -26,10 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cities/helpers/cityExists.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cities/helpers/cityExists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cities/helpers/getAllItemsFromDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cities/helpers/getAllItemsFromDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cities/updatePosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cities/updatePosition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/middleware/db/updateItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/db/updateItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/cities/getPosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cities/getPosition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware/db/getItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/db/getItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware/db/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/db/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/positions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/positions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639090878956</updated>
       <workItem from="1639090880029" duration="6181000" />
-      <workItem from="1639146873446" duration="15892000" />
+      <workItem from="1639146873446" duration="17836000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639170450432</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update position of child now working">
+      <created>1639172462874</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639172462874</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +151,8 @@
     <MESSAGE value="Add children into parent route done." />
     <MESSAGE value="Add position schema and routes." />
     <MESSAGE value="Init kid first position when reading his qrcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init kid first position when reading his qrcode" />
+    <MESSAGE value="Update position of child now working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update position of child now working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -171,17 +179,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639170451691">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639172464704">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639170451691" />
-    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639172317523">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639172464704" />
+    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639172984577">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639172317523" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639168560829">
+    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639172984577" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639174000978">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639168560829" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639174000978" />
   </component>
 </project>

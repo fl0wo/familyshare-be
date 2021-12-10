@@ -3,7 +3,7 @@ const { checkQueryString } = require('./checkQueryString')
 const { cleanPaginationID } = require('./cleanPaginationID')
 const { createItem } = require('./createItem')
 const { deleteItem } = require('./deleteItem')
-const { getItem } = require('./getItem')
+const { getItem, getMultipleItemByParam } = require('./getItem')
 const { getItems } = require('./getItems')
 const { listInitOptions } = require('./listInitOptions')
 const { updateItem } = require('./updateItem')
@@ -17,5 +17,6 @@ module.exports = {
   getItem,
   getItems,
   listInitOptions,
-  updateItem
+  updateItem,
+  getMultipleItemByParam: getMultipleItemByParam
 }

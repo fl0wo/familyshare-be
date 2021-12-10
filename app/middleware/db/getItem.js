@@ -17,4 +17,22 @@ const getItem = (id = '', model = {}) => {
   })
 }
 
-module.exports = { getItem }
+const getMultipleItemByParam = (whos = [], model = {}) => {
+  return new Promise((resolve, reject) => {
+    model.find({who : {$in : whos}}, async (err, item) => {
+      if(err) reject(err);
+      resolve(item);
+    })
+  })
+}
+
+const getItemByParam = (who = '', model = {}) => {
+  return new Promise((resolve, reject) => {
+    model.findOne({who}, async (err, item) => {
+      if(err) return err;
+      return item;
+    })
+  })
+}
+
+module.exports = { getItem, getMultipleItemByParam: getMultipleItemByParam}

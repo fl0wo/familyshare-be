@@ -1,6 +1,7 @@
-const { matchedData } = require('express-validator')
-const City = require('../../models/position')
-const { getItem } = require('../../middleware/db')
+const Positions = require('../../models/position')
+const User = require('../../models/user')
+
+const { getItem, getMultipleItemByParam } = require('../../middleware/db')
 const { isIDGood, handleError } = require('../../middleware/utils')
 
 /**
@@ -10,9 +11,22 @@ const { isIDGood, handleError } = require('../../middleware/utils')
  */
 const getPosition = async (req, res) => {
   try {
-    req = matchedData(req)
-    const id = await isIDGood(req.id)
-    res.status(200).json(await getItem(id, City))
+    let myId = req.user._id;
+
+    const id = await isIDGood(myId)
+
+    // TODO: add projection only childs id
+    User.findById(id,async (err,user)=>{
+
+      let myKidsId = user.childrens.map(kid=>kid.id);
+
+      getMultipleItemByParam(myKidsId, Positions)
+        .then(my_kids_positions=>{
+          res.status(200).json(my_kids_positions)
+      })
+
+    })
+
   } catch (error) {
     handleError(res, error)
   }

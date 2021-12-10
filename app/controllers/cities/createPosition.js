@@ -12,10 +12,7 @@ const { cityExists } = require('./helpers')
 const createPosition = async (req, res) => {
   try {
     req = matchedData(req)
-    const doesCityExists = await cityExists(req.name)
-    if (!doesCityExists) {
-      res.status(201).json(await createItem(req, City))
-    }
+    res.status(201).json(await createItem(req, City))
   } catch (error) {
     handleError(res, error)
   }

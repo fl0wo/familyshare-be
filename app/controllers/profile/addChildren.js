@@ -1,6 +1,7 @@
 const { isIDGood, handleError } = require('../../middleware/utils')
-const { matchedData } = require('express-validator')
 const { addChildrenToProfile } = require('./helpers/updateProfileInDB')
+const Position = require('../../models/position')
+const {createItem} = require("../../middleware/db/createItem")
 
 /**
  * Update profile function called by route
@@ -10,12 +11,33 @@ const { addChildrenToProfile } = require('./helpers/updateProfileInDB')
 const addChildren = async (req, res) => {
   try {
     const id = await isIDGood(req.user._id)
+
+    let qrCodeId = req.body.childId;
+    let lat = req.body.lat;
+    let long = req.body.long;
+    let name = req.body.childName;
+
     let children = {
-      name : req.body.childName,
-      id : req.body.childId,
+      name : name,
+      id : qrCodeId,
     }
 
-    res.status(200).json(await addChildrenToProfile(children, id))
+    addChildrenToProfile(children, id).then(addedChildren=>{
+      createItem({
+        who : qrCodeId.toString(),
+        positions: [{
+          coords : {
+            lat: lat,
+            long: long,
+          },
+          timestamp : new Date().getTime()
+        }]
+      },Position).then(created=>{
+        res.status(200)
+          .json(addedChildren);
+      })
+    })
+
   } catch (error) {
     handleError(res, error)
   }

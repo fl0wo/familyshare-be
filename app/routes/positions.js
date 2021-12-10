@@ -45,10 +45,7 @@ router.post(
 
 router.patch(
   '/',
-  requireAuth,
-  roleAuthorization(['user']),
   trimRequest.all,
-  validateCreateCity,
   updatePosition
 )
 

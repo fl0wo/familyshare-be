@@ -1,28 +1,20 @@
-const City = require('../../../models/position')
+const Position = require('../../../models/position')
 const { buildErrObject } = require('../../../middleware/utils')
 
-/**
- * Checks if a city already exists in database
- * @param {string} name - name of item
- */
-const cityExists = (name = '') => {
-  return new Promise((resolve, reject) => {
-    City.findOne(
-      {
-        name
-      },
-      (err, item) => {
-        if (err) {
-          return reject(buildErrObject(422, err.message))
-        }
+const checkPositionExists = (who = '') => {
 
-        if (item) {
-          return reject(buildErrObject(422, 'CITY_ALREADY_EXISTS'))
-        }
-        resolve(false)
+  console.log("whoooo??????? -> " + who)
+  return new Promise((resolve, reject) => {
+    Position.findOne(
+      {
+        who
+      },
+      async (err, user) => {
+        if(err) resolve(false)
+        else resolve(user!=null)
       }
     )
   })
 }
 
-module.exports = { cityExists }
+module.exports = { checkPositionExists }

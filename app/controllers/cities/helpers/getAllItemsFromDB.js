@@ -1,4 +1,4 @@
-const City = require('../../../models/position')
+const Positions = require('../../../models/position')
 const { buildErrObject } = require('../../../middleware/utils')
 
 /**
@@ -6,7 +6,7 @@ const { buildErrObject } = require('../../../middleware/utils')
  */
 const getAllItemsFromDB = () => {
   return new Promise((resolve, reject) => {
-    City.find(
+    Positions.find(
       {},
       '-updatedAt -createdAt',
       {
@@ -24,4 +24,23 @@ const getAllItemsFromDB = () => {
   })
 }
 
-module.exports = { getAllItemsFromDB }
+
+const addNewPosition = (position = {}, id = '') => {
+  return new Promise((resolve, reject) => {
+    Positions.findOneAndUpdate(
+      {who : id},
+      { $push: { positions: position  } },
+      {
+        new: true,
+        runValidators: true,
+        select: '-role -_id -updatedAt -createdAt'
+      },
+      async (err, doc) => {
+        if (err) resolve(false)
+        else resolve(doc!=null)
+      }
+    )
+  })
+}
+
+module.exports = { getAllItemsFromDB , addNewPosition}

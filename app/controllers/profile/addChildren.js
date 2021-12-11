@@ -4,6 +4,37 @@ const Position = require('../../models/position')
 const {createItem} = require("../../middleware/db/createItem")
 const User =     require('../../models/user')
 
+function insertInitialPositionKid(qrCodeId, children, lat, long, res, addedChildren) {
+  createItem({
+    who: qrCodeId.toString(),
+    color: children.color,
+    positions: [{
+      coords: {
+        lat: lat,
+        long: long,
+      },
+      timestamp: new Date().getTime()
+    }]
+  }, Position).then(created => {
+    res.status(200)
+      .json(addedChildren);
+  })
+}
+
+function addKidAndHisPosition(children, id, qrCodeId, lat, long, res) {
+  addChildrenToProfile(children, id)
+    .then(addedChildren => {
+      insertInitialPositionKid(qrCodeId, children, lat, long, res, addedChildren);
+    }).catch(err => {
+    res.status(200)
+      .json(err);
+  })
+}
+
+function isAlreadyMyKid(user, qrCodeId) {
+  return user.childrens.filter(k => k.id === qrCodeId).length > 0;
+}
+
 /**
  * Update profile function called by route
  * @param {Object} req - request object
@@ -29,32 +60,14 @@ const addChildren = async (req, res) => {
 
     User.findById(id,async (err,user)=>{
       if(err) throw err;
-      if(user.childrens.filter(k=>k.id===qrCodeId).length>0){
+      if(isAlreadyMyKid(user, qrCodeId)){
         console.log("cant insert twice same kid.")
         res.status(200).json("already present");
       } else {
-        addChildrenToProfile(children, id)
-          .then(addedChildren=>{
-            createItem({
-              who : qrCodeId.toString(),
-              color : children.color,
-              positions: [{
-                coords : {
-                  lat: lat,
-                  long: long,
-                },
-                timestamp : new Date().getTime()
-              }]
-            },Position).then(created=>{
-              res.status(200)
-                .json(addedChildren);
-            })
-          }).catch(err=>{
-            res.status(200)
-              .json(err);
-        })
+        addKidAndHisPosition(children, id, qrCodeId, lat, long, res);
       }
-    })
+    });
+
   } catch (error) {
     handleError(res, error)
   }

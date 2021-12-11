@@ -34,6 +34,10 @@ genitore = user
 6) Add color field to child into parent, draw kid
 position to FE with his color.
 
+6.1) Avoid adding twice the same kid (never happens)
+6.2) Avoid insert new position for existing kid.
+
+
 7) List of events
 7.1) Event(title, duration)
     (can create if u have at least 1 qrcode)

@@ -26,10 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/profile/addChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/addChildren.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_simulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/bot_simulator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <updated>1639090878956</updated>
       <workItem from="1639090880029" duration="6181000" />
       <workItem from="1639146873446" duration="22027000" />
-      <workItem from="1639235131110" duration="5300000" />
+      <workItem from="1639235131110" duration="7182000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639240069303</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Now can delete all ur kids when u finish an event">
+      <created>1639240551202</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1639240551202</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +214,8 @@
     <MESSAGE value="Adding color when insering new kid to parent" />
     <MESSAGE value="Cant insert twice the same kid for the same parent" />
     <MESSAGE value="Simple refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple refactoring" />
+    <MESSAGE value="Now can delete all ur kids when u finish an event" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now can delete all ur kids when u finish an event" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -235,17 +242,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639240071816">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639240552651">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639240071816" />
-    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639172984577">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639240552651" />
+    <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639243060599">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639172984577" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639236833183">
+    <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639243060599" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639244037928">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639236833183" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639244037928" />
   </component>
 </project>

@@ -3,6 +3,7 @@ const { addChildrenToProfile } = require('./helpers/updateProfileInDB')
 const Position = require('../../models/position')
 const {createItem} = require("../../middleware/db/createItem")
 const User =     require('../../models/user')
+const {removeAllChildrenToProfile} = require("./helpers/updateProfileInDB");
 
 function insertInitialPositionKid(qrCodeId, children, lat, long, res, addedChildren) {
   createItem({
@@ -73,6 +74,21 @@ const addChildren = async (req, res) => {
   }
 }
 
+const deleteChildren = async (req, res) => {
+  try {
+    const id = await isIDGood(req.user._id)
+    removeAllChildrenToProfile(id)
+      .then(removed => {
+        res.status(200).json(removed);
+      }).catch(err => {
+        res.status(200).json(err);
+    });
+
+  } catch (error) {
+    handleError(res, error)
+  }
+}
+
 let colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
   '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
   '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A',
@@ -84,4 +100,4 @@ let colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
   '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3',
   '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
-module.exports = { addChildren }
+module.exports = { addChildren , deleteChildren}

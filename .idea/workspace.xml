@@ -25,7 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/profile/addChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/addChildren.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +75,7 @@
       <updated>1639090878956</updated>
       <workItem from="1639090880029" duration="6181000" />
       <workItem from="1639146873446" duration="22027000" />
-      <workItem from="1639235131110" duration="4833000" />
+      <workItem from="1639235131110" duration="5300000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -164,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639239884241</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Simple refactoring">
+      <created>1639240069303</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1639240069303</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +207,8 @@
     <MESSAGE value="Now returning sliced positions to fe" />
     <MESSAGE value="Adding color when insering new kid to parent" />
     <MESSAGE value="Cant insert twice the same kid for the same parent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cant insert twice the same kid for the same parent" />
+    <MESSAGE value="Simple refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -223,10 +235,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639239885479">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639240071816">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639239885479" />
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639240071816" />
     <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639172984577">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

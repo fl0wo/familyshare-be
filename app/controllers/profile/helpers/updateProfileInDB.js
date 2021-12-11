@@ -55,4 +55,29 @@ const addChildrenToProfile = (children = {}, id = '') => {
   })
 }
 
-module.exports = { updateProfileInDB , addChildrenToProfile }
+
+const removeAllChildrenToProfile = (id = '') => {
+  return new Promise((resolve, reject) => {
+    User.findByIdAndUpdate(
+      id,
+      { $set: { childrens: []  } },
+      {
+        new: true,
+        runValidators: true,
+        select: '-role -_id -updatedAt -createdAt'
+      },
+      async (err, done) => {
+        try {
+          await itemNotFound(err, done, 'NOT_FOUND')
+          resolve(done)
+        } catch (error) {
+          reject(error)
+        }
+      }
+    )
+  })
+}
+
+
+
+module.exports = { updateProfileInDB , addChildrenToProfile , removeAllChildrenToProfile }

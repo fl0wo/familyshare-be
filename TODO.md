@@ -23,11 +23,30 @@ genitore = user
     - /{kid_id}/where ? -> coords Auth parent
     - /nearme/1000 ? -> List<coords> Genitori around me
 
-3) Quando bambino sparisce (chiude app/ non si ha + notizie di lui da 1 ora)
-    Trigger svuota posizioni di quel bambino
-    Trigger elimina bambino dalla lista di figli dei suoi genitori
-
 4) Check that u dont already have a kid registred with that 'who' id b4 reg again by mistake
 
 3) User::events ->
 [{kids:[string],start:Date,duration:duration,title,description,place:Coords}]
+
+5) For position use capped_collections. (X)
+
+5.1) Db saves all positions, BE returns only latest N
+6) Add color field to child into parent, draw kid
+position to FE with his color.
+
+7) List of events
+7.1) Event(title, duration)
+    (can create if u have at least 1 qrcode)
+    - title
+    - start_date (now)
+    - end_date (now + duration)
+    - kids (retrieve form jwt)
+8) Add new event (title duration)
+
+8.5) Quando bambino sparisce (chiude app/ non si ha + notizie di lui da 1 ora)
+    Trigger elimina bambino dalla lista di figli dei suoi genitori
+
+9) Show event (FE)
+    > show map with movements of kids
+    > show interested kids
+

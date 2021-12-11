@@ -3,6 +3,9 @@ const bcrypt = require('bcrypt')
 const validator = require('validator')
 const mongoosePaginate = require('mongoose-paginate-v2')
 
+const colorValidator = (v) => {
+  return v.startsWith("#")
+}
 const UserSchema = new mongoose.Schema(
   {
     name: {
@@ -31,7 +34,12 @@ const UserSchema = new mongoose.Schema(
     },
     childrens: [{
       id : String,
-      name : String
+      name : String,
+      color: {
+        type: String,
+        validator: [colorValidator, '#000'],
+        required: true,
+      }
     }],
     verification: {
       type: String

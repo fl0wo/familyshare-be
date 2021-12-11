@@ -26,7 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cities/getPosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cities/getPosition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/profile/addChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/addChildren.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/position.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,7 @@
       <updated>1639090878956</updated>
       <workItem from="1639090880029" duration="6181000" />
       <workItem from="1639146873446" duration="22027000" />
-      <workItem from="1639235131110" duration="1977000" />
+      <workItem from="1639235131110" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -144,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639236088229</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Now returning sliced positions to fe">
+      <created>1639237190403</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639237190403</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +182,8 @@
     <MESSAGE value="Now parents can see where their kids at." />
     <MESSAGE value="Added simple bot simulation version1" />
     <MESSAGE value="Added todo list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added todo list" />
+    <MESSAGE value="Now returning sliced positions to fe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now returning sliced positions to fe" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -200,10 +210,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639236090566">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639237192767">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639236090566" />
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639237192767" />
     <state x="987" y="433" width="585" height="534" key="find.popup" timestamp="1639172984577">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

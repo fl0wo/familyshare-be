@@ -4,6 +4,7 @@ const User = require('../../models/user')
 const { getItem, getMultipleItemByParam } = require('../../middleware/db')
 const { isIDGood, handleError } = require('../../middleware/utils')
 
+const MAX_POSITION_NUMBER = 30;
 /**
  * Get item function called by route
  * @param {Object} req - request object
@@ -21,8 +22,22 @@ const getPosition = async (req, res) => {
       let myKidsId = user.childrens.map(kid=>kid.id);
 
       getMultipleItemByParam(myKidsId, Positions)
-        .then(my_kids_positions=>{
-          res.status(200).json(my_kids_positions)
+        .then(myKidPos=>{
+
+          let latestNPositions = myKidPos.map(kidMoves=>{
+
+            if(kidMoves.positions.length > MAX_POSITION_NUMBER) {
+               kidMoves.positions
+                 = kidMoves.positions.slice(-MAX_POSITION_NUMBER);
+            }
+
+            return kidMoves;
+          });
+
+
+          res.status(200).json(
+            latestNPositions
+          )
       })
 
     })

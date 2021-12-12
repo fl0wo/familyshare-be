@@ -14,7 +14,9 @@ const {
   updateProfile,
   changePassword,
   addChildren,
-  deleteChildren
+  deleteChildren,
+  addEvent,
+  showEvent
 } = require('../controllers/profile')
 
 const {
@@ -81,6 +83,28 @@ router.delete(
   roleAuthorization(['user', 'admin']),
   trimRequest.all,
   deleteChildren
+)
+
+/*
+ * Add event
+ */
+router.post(
+  '/event/add',
+  requireAuth,
+  roleAuthorization(['user', 'admin']),
+  trimRequest.all,
+  addEvent
+)
+
+/*
+ * Show event
+ */
+router.post(
+  '/event/show',
+  requireAuth,
+  roleAuthorization(['user', 'admin']),
+  trimRequest.all,
+  showEvent
 )
 
 module.exports = router

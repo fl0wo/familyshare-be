@@ -41,6 +41,15 @@ const UserSchema = new mongoose.Schema(
         required: true,
       }
     }],
+    events : [{
+      title : String,
+      date_start : Date,
+      date_end : Date,
+      childrens : [{
+        name : String,
+        id : String
+      }]
+    }],
     verification: {
       type: String
     },

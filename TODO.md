@@ -55,6 +55,11 @@ position to FE with his color.
     > show interested kids
 
 8) Make Operations directly from mongo not be instead!
-OPTIMIZE IT
+OPTIMIZE IT -> https://studio3t.com/knowledge-base/articles/filter-elements-from-mongodb-arrays/
 REFACTOR IT
 CMON! U GOT THIS. go sleep now
+
+9) Show parents near me
+9.1) Whem zooming out group close parents in a single circle showing the number inside
+
+10) avoid creating new event if theres one currelty running

@@ -54,3 +54,7 @@ position to FE with his color.
     > show map with movements of kids
     > show interested kids
 
+8) Make Operations directly from mongo not be instead!
+OPTIMIZE IT
+REFACTOR IT
+CMON! U GOT THIS. go sleep now

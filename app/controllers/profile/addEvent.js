@@ -76,7 +76,6 @@ const showEvent = async (req, res) => {
           let positionsBetweenThisEvent = myKidPos
             .map(kidMoves=> {
                 return {
-                  ...kidMoves,
                   positions: kidMoves.positions
                     .filter(m => isDateInsideEvent(m.timestamp,ev))
                 }

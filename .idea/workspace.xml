@@ -25,15 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/profile/addEvent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/helpers/updateProfileInDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/profile/addEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/addEvent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639244222627</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Now event/show sends all kids positionS inside that event timelapse">
+      <created>1639318580283</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1639318580283</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +229,8 @@
     <MESSAGE value="Simple refactoring" />
     <MESSAGE value="Now can delete all ur kids when u finish an event" />
     <MESSAGE value="Now simulator can take kid id as parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now simulator can take kid id as parameter" />
+    <MESSAGE value="Now event/show sends all kids positionS inside that event timelapse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now event/show sends all kids positionS inside that event timelapse" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -260,10 +261,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639244223772">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639318583850">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639244223772" />
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639318583850" />
     <state x="1064" y="100" width="1403" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1639317142490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

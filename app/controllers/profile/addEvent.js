@@ -72,18 +72,18 @@ const showEvent = async (req, res) => {
       getMultipleItemByParam(kidsIds, Positions)
         .then(myKidPos=>{
 
-          console.log(myKidPos);
           let positionsBetweenThisEvent = myKidPos
-            .map(kidMoves=> {
+            .map((kidMoves)=> {
                 return {
                   positions: kidMoves.positions
-                    .filter(m => isDateInsideEvent(m.timestamp,ev))
+                    .filter(m => isDateInsideEvent(m.timestamp,ev)),
+                  color : kidMoves.color
                 }
           });
 
           let ret = {
             event : ev,
-            paths :positionsBetweenThisEvent
+            paths : positionsBetweenThisEvent
           }
 
           res.status(200).json(ret)

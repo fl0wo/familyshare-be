@@ -42,4 +42,4 @@ async function simulate() {
   await request(options, callback);
 }
 
-setInterval(simulate,1000);
+setInterval(simulate,5000);

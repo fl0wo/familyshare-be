@@ -5,4 +5,4 @@ RUN npm i
 # RUN npm ci --only=production
 COPY . .
 EXPOSE 3000
-CMD [ "node", "run", "start"]
+CMD [ "npm", "run", "dockerize"]

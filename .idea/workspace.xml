@@ -25,10 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ .dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/profile/addEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profile/addEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_simulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/bot_simulator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +65,21 @@
       <recent name="C:\Users\flo\Desktop\Università\ingegneria\v12\familyshare-be" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,7 +96,12 @@
       <workItem from="1639419386785" duration="1318000" />
       <workItem from="1639423228425" duration="2154000" />
       <workItem from="1639498908905" duration="5037000" />
-      <workItem from="1639584020375" duration="2711000" />
+      <workItem from="1639584020375" duration="3364000" />
+      <workItem from="1639596635046" duration="947000" />
+      <workItem from="1639763378361" duration="1899000" />
+      <workItem from="1639832746548" duration="4574000" />
+      <workItem from="1641135403764" duration="23000" />
+      <workItem from="1641400404693" duration="2693000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -201,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639318580283</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added simple readme with boot istructions for v1.">
+      <created>1639595689427</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639595689427</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +265,8 @@
     <MESSAGE value="Now can delete all ur kids when u finish an event" />
     <MESSAGE value="Now simulator can take kid id as parameter" />
     <MESSAGE value="Now event/show sends all kids positionS inside that event timelapse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now event/show sends all kids positionS inside that event timelapse" />
+    <MESSAGE value="Added simple readme with boot istructions for v1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added simple readme with boot istructions for v1." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
@@ -268,10 +297,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639318583850">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639595691255">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639318583850" />
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639595691255" />
     <state x="262" y="113" width="1403" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1639322348347">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -280,9 +309,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639527633353" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1639527637133">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1641401494247">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639527637133" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1641401494247" />
   </component>
 </project>

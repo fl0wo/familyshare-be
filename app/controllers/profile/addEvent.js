@@ -20,7 +20,7 @@ const addEvent = async (req, res) => {
 
     let title = req.body.title;
     let date_start = new Date().getTime();
-    let date_end = new Date(date_start + (req.body.duration*1000)).getTime()
+    let date_end = new Date(date_start + (req.body.duration*60*1000)).getTime()
 
     User.findById(id,async (err,user)=>{
       if(err) throw err;

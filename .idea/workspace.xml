@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,11 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26519976-1b33-4246-968b-c2bdb67a0ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ .dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/familyshare-be.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_simulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/bot_simulator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="224JMdKnw2Ikw1EKf3Z5QBgtmWI" />
   <component name="ProjectViewState">
@@ -54,6 +57,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fe3/weldev-project-react-mui-ts-bp" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\flo\Desktop\Università\ingegneria\v12\familyshare-be\node_modules\prettier" />
@@ -101,7 +105,9 @@
       <workItem from="1639763378361" duration="1899000" />
       <workItem from="1639832746548" duration="4574000" />
       <workItem from="1641135403764" duration="23000" />
-      <workItem from="1641400404693" duration="2693000" />
+      <workItem from="1641400404693" duration="7958000" />
+      <workItem from="1642014570399" duration="323000" />
+      <workItem from="1642176992023" duration="1343000" />
     </task>
     <task id="LOCAL-00001" summary="ING-001: First commit">
       <created>1639095579673</created>
@@ -229,7 +235,35 @@
       <option name="project" value="LOCAL" />
       <updated>1639595689427</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Getting ready for CI/CD.">
+      <created>1641403783371</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1641403783371</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Adding env file for now.">
+      <created>1641404357548</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1641404357548</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Removing .env from gitignore">
+      <created>1641404830970</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1641404830970</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Updating env with server's ip.">
+      <created>1641405343874</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1641405343874</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,17 +300,21 @@
     <MESSAGE value="Now simulator can take kid id as parameter" />
     <MESSAGE value="Now event/show sends all kids positionS inside that event timelapse" />
     <MESSAGE value="Added simple readme with boot istructions for v1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added simple readme with boot istructions for v1." />
+    <MESSAGE value="Getting ready for CI/CD." />
+    <MESSAGE value="Adding env file for now." />
+    <MESSAGE value="Removing .env from gitignore" />
+    <MESSAGE value="Updating env with server's ip." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating env with server's ip." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091171350">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1694" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1639091171350" />
-    <state x="595" y="100" width="1872" height="1207" key="DiffContextDialog" timestamp="1639595444997">
+    <state x="595" y="100" width="1872" height="1207" key="DiffContextDialog" timestamp="1641404850108">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="595" y="100" width="1872" height="1207" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1639595444997" />
+    <state x="595" y="100" width="1872" height="1207" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1641404850108" />
     <state x="1656" y="458" key="FileChooserDialogImpl" timestamp="1639417979926">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -297,10 +335,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1256" height="403" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1639094731012" />
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1639595691255">
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2" timestamp="1641405345338">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1639595691255" />
+    <state x="232" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1641405345338" />
     <state x="262" y="113" width="1403" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1639322348347">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -309,9 +347,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="987" y="433" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1639527633353" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1641401494247">
+    <state x="943" y="315" width="1177" height="678" key="search.everywhere.popup" timestamp="1642177843964">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1641401494247" />
+    <state x="943" y="315" width="1177" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1642177843964" />
   </component>
 </project>

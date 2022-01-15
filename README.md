@@ -1,28 +1,25 @@
 ## Family Share Back End
 
 
-Versione beta.
+Version 1.1.
 
-Documentazione : TODO
+Documentation : TODO
 
-Istruzioni per il boot del :
+Instructions for booting:
+    - docker-compose up -d
+    - npm i
+    - npm run dev
 
-- docker-compose up -d
-- npm i
-- npm run dev
+1) Start the mongo db with docker
+2) Install dependencies
+3) start the server in dev mode.
+4) To start a children's movement simulator: ===> node bot_simulator.js -u {bimboId}
 
-1) Avviare il db mongo con docker
+The application has been deployed on a server: ===> http://vps-487579d2.vps.ovh.net:5002/
+Back-end comand: ===> docker run -dit -p 5001:3000 --restart unless-stopped floflo49/familyshare:latest
 
-2) installare le dipendenze
-
-3) avviare in modalita' dev il server.
-
-4) Per avviare un simulatore di movimento di bambini :
-node bot_simulator.js -u {bimboId}
-
-TODO nella next version :
-
-- Rendere sicura l'invio della mail mappando i secret all'interno del progetto.
-- Definire pipeline di CI/CD per l'autodeploy.
-- Convertire e rifattorizzare tutta la code base da Js a Ts.
-- Migrare certe operazioni pesanti da server side a db side.
+Back-end features: 
+   - child registration via parent profile
+   - tracking the movement of children by longitude and latitude ---> simulation via bot
+   - creation of events / activities for children to do 
+   - code to verify the valid e-mail: ===> now doesn't work because we don't pay Gmail and we have run out all the test mails
